@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');  
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');  
+ body{
+
+  background-color: #000;
+  animation: BGcolorChanging-1colors 6s linear infinite alternate both;
+ }
+
+ @keyframes BGcolorChanging-1colors {
+	100% {
+	  background: #000000;
+	}
+	100% {
+	  background: #ffffff;
+	}
+	100% {
+	  background: #000000;
+	}
+	100% {
+	  background: #ffffff;
+	}
+  }
+
+ div {  
+  margin: 20px auto;  
+  width: 70%;  
+  font-family: 'Lato';  
+  padding: 5px;  
+  background:rgb(56, 56, 56);
+  color:#fff;
+  animation: BGcolorChanging-2colors 6s linear infinite alternate both;  
+ }
+ 
+ @keyframes BGcolorChanging-2colors {
+	100% {
+	  background: #080808;
+	}
+	100% {
+	  background: #ffffff;
+	}
+	100% {
+	  background: #000000;
+	}
+	100% {
+	  background: rgb(255, 255, 255);
+	}
+  }
+
+ *{  
+  margin:0;  
+  padding:0;  
+ }  
+ h4 {  
+  font-weight: bold;  
+  font-size: 2rem;  
+ }  
+ p {  
+  font-family: 'Reenie Beanie';  
+  font-size: 2rem;  
+ }  
+ ul,li{  
+  list-style:none;  
+ }  
+ ul{  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: center;  
+ }  
+ ul li a{  
+  text-decoration:none;  
+  color:#000;  
+  background:rgb(255, 136, 0);  
+  display:block;  
+  height:10em;  
+  width:10em;  
+  padding:1em;  
+  box-shadow: 10px 10px 10px rgba(33,33,33,.7);  
+  transition: transform .15s linear;   
+ }  
+ ul li{  
+  margin:1em;  
+ }  
+ ul li:nth-child(odd) a{  
+  transform:rotate(-4deg);  
+  position:relative;  
+  top:5px;  
+ }  
+ ul li:nth-child(even) a{  
+  transform:rotate(4deg);  
+  position:relative;  
+  top:5px;  
+ }  
+ ul li:nth-child(3n) a{  
+  transform:rotate(-3deg);  
+  position:relative;  
+  top:-5px;  
+ }  
+ ul li:nth-child(5n) a{  
+  transform:rotate(5deg);  
+  position:relative;  
+  top:-10px;  
+ }  
+ ul li a:hover,ul li a:focus{  
+  box-shadow:10px 10px 10px rgba(0,0,0,.7);  
+  transform: scale(1.25);  
+  position:relative;  
+  z-index:5;
+  border-radius: 25%;
+  transition-duration: 250ms;
+  animation: BGcolorChanging-3colors 6s linear infinite alternate both;  
+  
+ }  
+ ul li:nth-child(even) a{  
+  position:relative;  
+  top:5px;  
+  background:rgb(0, 190, 248);  
+ }  
+ ul li:nth-child(3n) a{  
+  position:relative;  
+  top:-5px;  
+  background:rgb(118, 0, 148);  
+ }  
+
+
+ @keyframes BGcolorChanging-3colors {
+	100% {
+	  background: #080808;
+	}
+	100% {
+	  background: #ffffff;
+	}
+	100% {
+	  background: #000000;
+	}
+	100% {
+	  background: rgb(255, 255, 255);
+	}
+  }
